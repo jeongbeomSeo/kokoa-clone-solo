@@ -1,0 +1,18 @@
+#no-mobile {
+  position: absolute; /* 이것으로 인해서 위에 content를 무시가능. */
+  top: 0; /* position:absolute를 통해 화면 맨위에 위치. */
+  z-index: 99;
+  height: 100vh;
+  width: 100vw;
+  background-color: var(--yellow);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 32px;
+}
+
+@media screen and (max-width: 645px) {
+  #no-mobile {
+    display: none;
+  }
+}

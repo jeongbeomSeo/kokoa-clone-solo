@@ -1,0 +1,40 @@
+.icon-rows {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 10px 30px;
+  border-bottom: var(--main-border);
+  flex-wrap: wrap;
+}
+
+.icon-row {
+  display: flex;
+  flex-direction: column;
+  text-align: center; /* 다음 row에도 영향을준다. 결국 icon-row클래스 안에 있기때문에. */
+  width: 25%; /* 웨에 4개의 아이콘만 오게끔 만듬. */
+}
+.icon-row i {
+  font-size: 35px;
+  margin-bottom: 15px;
+  color: #4c4c4c;
+}
+
+.icon-row span {
+  font-weight: 600;
+  color: #4c4c4c;
+}
+
+.icon-rows--second {
+  display: flex;
+  flex-direction: row;
+  width: 50%; /* width를 50%를 줌으로써 위에 row들과 같은 배치하기. */
+  justify-content: center;
+  align-items: center;
+  margin-top: 50px;
+}
+
+.icon-row__second {
+  display: flex;
+  flex-direction: column;
+  width: 50%; /* 하나의 아이콘 박스가 전체 width의 50%를가지고 거기서 50%를 가지는것. */
+}

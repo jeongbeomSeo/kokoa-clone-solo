@@ -1,0 +1,102 @@
+#chat-screen {
+  height: 1000vh;
+  background-color: #abc1d1;
+}
+
+#chat-screen .status-bar,
+#chat-screen .alt-screen-header {
+  /* 해당 페이지에만 css를 적용시키고 싶을때는 body에 id를 주고 자식 태그 선택자 이용. */
+  background-color: #abc1d1;
+  position: fixed;
+  top: 0%;
+  width: 100%;
+}
+
+#chat-screen .status-bar {
+  padding-top: 10px;
+  z-index: 3;
+}
+
+#chat-screen .alt-screen-header {
+  padding-top: 40px;
+}
+
+#chat-screen .main-screen {
+  margin-top: 140px;
+}
+
+.chat-current-date {
+  /* 상위 box를 이용해서 중간에 가져다 놓고 하위 box에서 border을 생성하는것. */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 25px;
+}
+
+.chat-current-date span {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 220px;
+  height: 40px;
+  border-radius: 20px;
+  color: #f2f5f6;
+  background-color: rgba(0, 0, 0, 0.2);
+}
+
+.message-row {
+  display: flex;
+}
+
+.message-row img {
+  width: 60px;
+  height: 60px;
+  border-radius: 20px;
+  margin-right: 10px;
+}
+
+.messsage__author {
+  color: rgba(0, 0, 0, 0.4);
+}
+
+.message__info {
+  display: flex;
+  margin-top: 10px;
+}
+
+.message__bubble {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 55px;
+  height: 45px;
+  border-radius: 20px;
+  background-color: white;
+  border-top-left-radius: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.message__time {
+  margin-left: 5px;
+  display: flex;
+  align-items: flex-end;
+  color: rgba(0, 0, 0, 0.5);
+  font-size: 13px;
+}
+
+.message-row--own {
+  justify-content: flex-end;
+}
+
+.message-row--own .message__info {
+  flex-direction: row-reverse;
+}
+
+.message-row--own .message__bubble {
+  border-top-left-radius: 20px;
+  border-top-right-radius: 0px;
+  background-color: var(--yellow);
+  margin-left: 5px;
+  width: 120px;
+}

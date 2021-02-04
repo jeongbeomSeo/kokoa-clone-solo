@@ -1,0 +1,78 @@
+.user-components__columns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.user-components__avater--sm {
+  width: 70px;
+  height: 70px;
+  border-radius: 28px;
+  margin: 5px 0;
+}
+
+.user-components__avater--xl {
+  width: 80px;
+  height: 80px;
+  border-radius: 23px;
+}
+
+.user-components__column {
+  display: flex;
+  align-items: center;
+}
+
+.user-components__titles {
+  margin-left: 13px;
+  display: flex;
+  flex-direction: column;
+}
+
+.user-components__title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.user-components__subtitle {
+  color: rgba(0, 0, 0, 0.4);
+  font-weight: 600;
+}
+
+.user-components__column:last-child {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.user-components__time {
+  margin-bottom: 7px;
+  color: rgba(0, 0, 0, 0.3);
+  font-weight: 600;
+}
+
+.user-components__number {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  background-color: #ff6229;
+  color: white;
+  border-radius: 50%;
+}
+
+.user-components__exclamation-mark {
+  display: inline-block;
+  text-align: center;
+  color: red;
+  width: 15px;
+  height: 15px;
+  line-height: 13px;
+  border-radius: 50%;
+  border: 1px solid red;
+}
+
+.user-components__column--margin-right {
+  margin-right: 10px;
+}
